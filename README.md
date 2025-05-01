@@ -1,5 +1,9 @@
 # Animula - A Functional Programming Virtual Machine for Embedded Systems
 
+<center>
+<img src="img/animula.png" alt="Animula logo"/>
+</center>
+
 **Welcome to the world of Animula!**
 
 ## What is Animula?

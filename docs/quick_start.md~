@@ -1,0 +1,8 @@
+# Install Laco compiler
+
+Here, we assume you are under Ubuntu.
+
+## Deps
+
+```bash
+sudo apt install

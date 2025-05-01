@@ -4,7 +4,7 @@
 <img src="img/animula.png" alt="Animula logo"/>
 </center>
 
-**Welcome to the world of Animula!**
+[LambdaChip renamed to Animula](https://www.nalaginrut.com/archives/2022/10/09/lambdachip%20renamed%20to%20animula)
 
 ## What is Animula?
 

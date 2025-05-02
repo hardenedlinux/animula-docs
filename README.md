@@ -80,5 +80,8 @@ Its compiler, called **Laco**—short for *Lambda Compiler*—is at the heart of
 
 # Documents
 
-- [Quick Start](docs/quick_start.md)
-- [Alonzo board](docs/alonzo.md)
+- Run it on GNU/Linux of PC
+  - [Quick Start](docs/quick_start.md)
+- Supporting hardware:
+  - [Alonzo board spec](docs/alonzo_board.md)
+    - [Quick start](docs/alonzo_quick_start.md)

@@ -94,4 +94,4 @@ Its compiler, called **Laco**—short for *Lambda Compiler*—is at the heart of
   - [Alonzo board spec](docs/alonzo_spec.md)
     - [Quick start](docs/alonzo_quick_start.md)
     - [Peripheral API guide](docs/alonzo_api.md)
-    - [Bootloader & firmware upgrade guide](docs/alonzo_firmware_upgrade.md）
+    - [Bootloader & firmware upgrade guide](docs/alonzo_firmware_upgrade.md)

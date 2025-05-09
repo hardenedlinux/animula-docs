@@ -17,7 +17,7 @@ Running Animula on Linux is a great way to get started with the toolchain. It al
 ## Deps
 
 ```bash
-sudo apt install guile build-essential
+sudo apt install guile-3.0-dev guile-3.0 build-essential
 ```
 
 ## Build Laco compiler

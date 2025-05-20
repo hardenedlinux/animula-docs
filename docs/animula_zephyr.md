@@ -58,20 +58,7 @@ cd zephyrRTOS
 sudo apt install python3-venv
 python3 -m venv .venv
 source .venv/bin/activate
-
-pip install west
-west init zephyr
-west update
-
-# export a Zephyr CMake package. This allows CMake to automatically load boilerplate code required for building Zephyr applications.
-west zephyr-export
-
-# export a Zephyr CMake package. This allows CMake to automatically load boilerplate code required for building Zephyr applications.
-west packages pip --install
-
 ```
-
-**west tool** will start to download the zephyrRTOS source code. This may take a while depending on your internet connection.
 
 #### Download ZephyrRTOS SDK
 
@@ -85,7 +72,19 @@ mv zephyr-sdk-0.17.0 sdk
 
 #### Download ZephyrRTOS source
 
+**west tool** will start to download the zephyrRTOS source code. This may take a while depending on your internet connection.
+
 ```bash
+pip install west
+west init zephyr
+west update
+
+# export a Zephyr CMake package. This allows CMake to automatically load boilerplate code required for building Zephyr applications.
+west zephyr-export
+
+# export a Zephyr CMake package. This allows CMake to automatically load boilerplate code required for building Zephyr applications.
+west packages pip --install
+```
 
 #### Set the environment variables
 
@@ -103,6 +102,9 @@ export Zephyr_DIR=$ZEPHYR_BASE
 Don't forget to source the file:
 ```bash
 source ~/.bashrc
+
+## NOTE: you need to activate the virtual environment again
+source .venv/bin/activate
 ```
 
 #### Build the firmware

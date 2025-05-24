@@ -106,3 +106,6 @@ Its compiler, called **Laco**—short for *Lambda Compiler*—is at the heart of
     - [Quick start](docs/alonzo_quick_start.md)
     - [Peripheral API guide](docs/alonzo_api.md)
     - [Bootloader & firmware upgrade guide](docs/alonzo_firmware_upgrade.md)
+- Saruman Debugger
+  - [Saruman Intro](docs/saruman_intro.md)
+  - [Debugging with Saruman](https://github.com/compuphase/Black-Magic-Probe-Book/blob/main/BlackMagicProbe.pdf)

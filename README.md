@@ -89,6 +89,10 @@ Animula implements a carefully optimized instruction set to execute **LEF** (Lig
 
 Its compiler, called **Laco**—short for *Lambda Compiler*—is at the heart of this system. Unlike an interpreter, Laco compiles Scheme code into compact and efficient bytecode optimized for resource-limited devices.
 
+# How to buy Animula powered hardware?
+
+[GizVault Shop](https://gizvault.com/animula-alonzo-revived)
+
 # Documents
 
 - Basics
@@ -109,3 +113,5 @@ Its compiler, called **Laco**—short for *Lambda Compiler*—is at the heart of
 - Saruman Debugger
   - [Saruman Intro](docs/saruman_intro.md)
   - [Debugging with Saruman](https://github.com/compuphase/Black-Magic-Probe-Book/blob/main/BlackMagicProbe.pdf)
+- Download
+  - [Download firmware & bootloader](docs/download.md)

@@ -91,7 +91,7 @@ Its compiler, called **Laco**—short for *Lambda Compiler*—is at the heart of
 
 # How to buy Animula powered hardware?
 
-[GizVault Shop](https://gizvault.com/animula-alonzo-revived)
+[GizVault Shop](https://gizvault.com/archives/animula-alonzo-revived)
 
 # Documents
 

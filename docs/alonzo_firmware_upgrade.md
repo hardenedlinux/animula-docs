@@ -33,7 +33,7 @@ The **downgrade process** is exactly the same as the **upgrade process**—so th
 
 ## Upgrade Animula VM firmware
 
-Before starting, we assume you've already downloaded the new firmware from the [download page](/articles/misc/download).
+Before starting, we assume you've already downloaded the new firmware from the [download page](download.md).
 
 Once you unzip the downloaded file, you should get a **firmware.bin** file. **Do not rename** this file. The bootloader specifically looks for a file named **firmware.bin** on the TF card and will automatically flash it.
 

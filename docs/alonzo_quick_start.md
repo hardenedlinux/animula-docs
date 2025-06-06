@@ -4,19 +4,20 @@
 
 In this tutorial, we'll teach you the process to make the Alonzo board work. It's for newbies of Animula.
 
-## Preparing the environment
+## Build from source code
 
-What should you do when you have a piece of Animula hardware (e.g Alonzo board)?
+```bash
+sudo apt install getttext texinfo guile-3.0 guile-3.0-dev make automake git autoconf libtool
 
-Preparing the environment is a good start! Then you can write code and compile it. It won't be hard if you follow up.
+git clone https://github.com/hardenedlinux/laco.git
+./configure --prefix=/usr
+make -j5
+sudo make install
+```
 
-### System requirement
-
-We strongly recommend GNU/Linux operating system. Of course, you may use Windows or macOS as well. The development environment of Animula is system-independent.
+## Build from Docker
 
 Before continue, please install Docker, we recommend the [official installation of Docker](https://docs.docker.com/get-docker/).
-
-### Get docker image of Laco compiler
 
 When you have a workable docker system, please copy and run this command:
 ```bash
@@ -37,34 +38,38 @@ Before getting into the docker environment, we need to prepare a workspace. The 
 
 For example, in GNU/Linux, we can create the workspace like this:
 ```bash
-mkdir ~/lambdachip-workspace
+mkdir ~/animula-workspace
 ```
 OK, we've finished preparing the environment, now we can use it.
 
-## Use the Animula image
+## Build with docker
 
-In this tutorial, we're trying to help you to let Animula work quickly, so we hope you copy and run the command even if you don't understand it completely.
+Laco doesn't provide a prepared Docker image, we strongly recommend you to build it by yourself.
+
+```bash
+sudo docker build -t laco:latest .
+```
 
 ### Get into the Laco environment
 
 Please copy and run this command to login:
 ```bash
-cd lambdachip-workspace
+cd animula-workspace
 docker run -it --rm \
                  -v $PWD:/workspace \
                  -w /workspace \
-                 -u "lambdachip:lambdachip" \
-                 registry.gitlab.com/lambdachip/laco:latest \
+                 -u "animula:animula" \
+                 laco:latest \
                  bash
 ```
 Now you should see something similar like this:
 
 ```bash
-lambdachip@9e43fbe7cf38:/workspace$
+animula@9e43fbe7cf38:/workspace$
 ```
 Welcome to your new workspace, we can start to write code now.
 
-*NOTE: The /workspace inside docker was mapped to ~/lambdachip-workspace on your host system.*
+*NOTE: The /workspace inside docker was mapped to ~/animula-workspace on your host system.*
 
 *NOTE: Forget about the meaning of this command line, you'll learn more when you follow our steps.*
 
@@ -77,8 +82,10 @@ Open your favorite editor or IDE, and create a new file named **program.scm**. J
 ```scheme
 (define (main x)
   (gpio-toggle! 'dev_led0)
-  (usleep 200000)
-  (if (= x 0)
+  (usleep 100000)
+  (gpio-toggle! 'dev_led0)
+  (usleep 100000)
+  (if (= x 1)
     #t
     (main (- x 1))))
 (main 10)

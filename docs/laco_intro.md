@@ -52,15 +52,3 @@ laco -t cps a.scm
 ```
 
 *Please notice that the output result was beautified for human readability, the actual CPS forms in the internal compiler are complicated and unreadable for non-expertise.*
-
-
-## What's next?
-
-For **newbies**, it's a good idea to learn these topics:
-- [Animula Virtual Machine](/articles/docs/3).
-- [The basics of Scheme](/articles/docs/4).
-
-For **veterans**, you may want to learn deeper things:
-- [What is LEF?](/articles/docs/5).
-- [The basics of CPS](/articles/docs/6).
-- [CPS on compiling](/articles/docs/7).

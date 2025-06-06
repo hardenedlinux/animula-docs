@@ -4,6 +4,7 @@
 
 - [0.4.4](../firmware/0.4.4/firmware.bin)
 - [0.5.1](../firmware/0.5.1/firmware.bin)
+- [0.5.2](../firmware/0.5.2/firmware.bin)
 
 ## Alonzo bootloader for ZephyrRTOS
 
